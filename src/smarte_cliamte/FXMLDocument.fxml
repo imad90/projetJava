@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smarte_cliamte.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="503.0" prefWidth="673.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Visualisation ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="669.0">
+                     <children>
+                        <ComboBox fx:id="T_annee" layoutX="28.0" layoutY="83.0" prefHeight="25.0" prefWidth="71.0" promptText="2017" />
+                        <ComboBox fx:id="T_mois" layoutX="121.0" layoutY="83.0" prefHeight="25.0" prefWidth="40.0" promptText="1" />
+                        <ComboBox fx:id="T_jour" layoutX="189.0" layoutY="83.0" prefHeight="25.0" prefWidth="35.0" promptText="1" />
+                        <ComboBox fx:id="T_heur" layoutX="257.0" layoutY="83.0" prefHeight="25.0" prefWidth="53.0" promptText="0" />
+                        <Button fx:id="telechargement" layoutX="331.0" layoutY="83.0" mnemonicParsing="false" text="telecharger" />
+                        <Button fx:id="importer" layoutX="429.0" layoutY="83.0" mnemonicParsing="false" onAction="#importer_fichier" text="importer_fichier" />
+                        <TableView fx:id="table_donne" layoutX="40.0" layoutY="276.0" prefHeight="162.0" prefWidth="581.0" />
+                        <ListView fx:id="liste" layoutX="203.0" layoutY="149.0" prefHeight="61.0" prefWidth="255.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Evolution ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="liste1" layoutX="164.0" layoutY="31.0" prefHeight="61.0" prefWidth="255.0" />
+                        <TableView fx:id="table_donne1" layoutX="24.0" layoutY="104.0" prefHeight="162.0" prefWidth="581.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Comparaison">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="c_jour1" layoutX="223.0" layoutY="78.0" prefHeight="25.0" prefWidth="35.0" promptText="1" />
+                        <ComboBox fx:id="c_mois1" layoutX="139.0" layoutY="78.0" prefHeight="25.0" prefWidth="40.0" promptText="1" />
+                        <ComboBox fx:id="c_annee1" layoutX="33.0" layoutY="78.0" prefHeight="25.0" prefWidth="71.0" promptText="2017" />
+                        <ComboBox fx:id="c_annee2" layoutX="363.0" layoutY="78.0" prefHeight="25.0" prefWidth="71.0" promptText="2017" />
+                        <ComboBox fx:id="c_mois2" layoutX="469.0" layoutY="78.0" prefHeight="25.0" prefWidth="40.0" promptText="1" />
+                        <ComboBox fx:id="c_jour2" layoutX="553.0" layoutY="78.0" prefHeight="25.0" prefWidth="35.0" promptText="1" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
